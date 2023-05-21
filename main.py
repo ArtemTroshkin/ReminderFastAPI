@@ -49,15 +49,3 @@ async def home(request: Request):
 async def remove_reminder(index: int):
     reminders.pop(index)
     return RedirectResponse('/', status_code=status.HTTP_303_SEE_OTHER)
-
-
-
-
-
-
-
-
-
-
-
-
